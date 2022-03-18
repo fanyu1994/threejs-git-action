@@ -29,10 +29,6 @@ jobs:
           host: 114.55.234.157
           username: 'root'
           port: 22
-          KEY: 'b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACAg1sx6nguGmmhqP9axTwEF6S3fVmWGPMmSOqygpFkgDgAAAJgZHYygGR2M
-oAAAAAtzc2gtZWQyNTUxOQAAACAg1sx6nguGmmhqP9axTwEF6S3fVmWGPMmSOqygpFkgDg
-AAAECM6lgPbAVHfvwVQTSPucN1yf654fG8W9atmmvPkQaUiCDWzHqeC4aaaGo/1rFPAQXp
-Ld9WZYY8yZI6rKCkWSAOAAAAETEwMjUxNTM2OTdAcXEuY29tAQIDBA=='
-          source: '/'
+          KEY: ${{ secrets.SERVER_SSH }}
+          source: ''
           target: '/usr/share/nginx/html'
