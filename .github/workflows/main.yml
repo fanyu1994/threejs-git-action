@@ -30,5 +30,5 @@ jobs:
           username:  ${{ secrets.UN }}
           port: 22
           password:   ${{ secrets.PWD }}
-          source: 'dist/'
+          source: 'dist/*'
           target: ${{ secrets.TAR }}
