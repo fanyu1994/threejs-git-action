@@ -27,7 +27,7 @@ jobs:
         uses: appleboy/scp-action@master
         with:
           host:  ${{ secrets.HOST }}
-          username: ${{ secrets.UN }}
+          username: 'root'
           port: 22
           key: 'b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAYEAytN/Z7wWQ/JhiM7gAw1ZzUelLQwGhyeE67m5P84V+NgbM+MmNXQ2
