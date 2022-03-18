@@ -30,5 +30,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           port: ${{ secrets.SERVER_PORT }}
           password: ${{ secrets.SERVER_PASSWORD }}
+          KEY: ${{ secrets.SERVER_SSH }}
           source: '/'
           target: ${{ secrets.SERVER_TARGET }}
