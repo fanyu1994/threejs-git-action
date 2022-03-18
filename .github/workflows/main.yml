@@ -20,15 +20,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job password: ${{ secrets.SERVER_PASSWORD }}
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access 
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access   s
       - uses: actions/checkout@v2
 
       - name: scp file
         uses: appleboy/scp-action@master
         with:
           host:  ${{ secrets.HOST }}
-          username: 'root'
+          username:  ${{ secrets.UN }}
           port: 22
-          password: 'Qwe_13461838285'
+          password:   ${{ secrets.PWD }}
           source: 'dist/'
           target: ${{ secrets.TAR }}
