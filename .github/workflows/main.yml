@@ -26,9 +26,9 @@ jobs:
       - name: scp file
         uses: appleboy/scp-action@master
         with:
-          host: 114.55.234.157
-          username: 'root'
+          host:  ${{ secrets.HOST }}
+          username: ${{ secrets.UN }}
           port: 22
-          KEY: ${{ secrets.SERVER_SSH }}
+          KEY: ${{ secrets.SSH }}
           source: ''
-          target: '/usr/share/nginx/html'
+          target: ${{ secrets.TAR }}
