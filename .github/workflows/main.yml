@@ -29,6 +29,6 @@ jobs:
           host:  ${{ secrets.HOST }}
           username: ${{ secrets.UN }}
           port: 22
-          KEY: ${{ secrets.SSH }}
+          key: ${{ secrets.SSH }}
           source: ''
           target: ${{ secrets.TAR }}
