@@ -39,7 +39,7 @@ onMounted(() => {
   var controls = new OrbitControls(camera, renderer.domElement)
   controls.autoRotate = true // 设置控制器自动旋转
   controls.enableDamping = true // 启用阻尼效果
-  controls.dampingFactor = 0.1 // 阻尼系数，越小阻尼越强
+  controls.dampingFactor = 0.1 // 阻尼系数，越小阻尼越强1
   controls.rotateSpeed = 0.5 // 旋转速度
 
   // 设置相机位置
