@@ -1,4 +1,5 @@
 <template>
+  <h1>{{ msg }}</h1>
   <div class="card"></div>
 </template>
 
@@ -7,21 +8,20 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { onMounted, defineProps } from 'vue'
 
-interface Props {}
+interface Props {
+  msg: string
+}
 
-defineProps<Props>()
+withDefaults(defineProps<Props>(), {
+  msg: '标题未设置',
+})
 
 const width = window.innerWidth
 const height = 800
 onMounted(() => {
   // 创建场景、相机和渲染器
   var scene = new THREE.Scene()
-  var camera = new THREE.PerspectiveCamera(
-    75,
-    width/height,
-    0.1,
-    1000
-  )
+  var camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000)
   var renderer = new THREE.WebGLRenderer()
 
   renderer.setSize(width, height)
