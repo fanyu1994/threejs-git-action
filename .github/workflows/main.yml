@@ -57,4 +57,4 @@ jobs:
           username: 'root'
           # key: ${{ secrets.SERVER_SSHKEY }}
           password: ${{ secrets.SERVER_PASSWORD }}
-          script: cd /home/fy-three/cicd &&  sh dockerBootstrap.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.SERVER_PASSWORD }}
+          script: cd /home/fy-three/cicd &&  sh dockerBootstrap.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
