@@ -30,7 +30,7 @@ onMounted(() => {
   // 创建一个球体，并将全景图片作为纹理贴上去
   var geometry = new THREE.SphereGeometry(500, 60, 40)
   geometry.scale(-1, 1, 1)
-  var texture = new THREE.TextureLoader().load('src/assets/bg2.jpg')
+  var texture = new THREE.TextureLoader().load('/src/assets/bg2.jpg')
   var material = new THREE.MeshBasicMaterial({ map: texture })
   var sphere = new THREE.Mesh(geometry, material)
   scene.add(sphere)
