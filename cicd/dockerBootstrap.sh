@@ -1,7 +1,7 @@
 echo  -e "------------登陆镜像服务器---------------"
 docker login --username=$1 registry.cn-hangzhou.aliyuncs.com --password=$2
 
-echo -e "-------------停止容器------------------"
+echo -e "-------------停止容器-----------------"
 docker stop fy-three
 
 echo -e "-------------删除容器----------------"
